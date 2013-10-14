@@ -103,6 +103,8 @@ for i in $( ls $TMP/$PRGNAM/doc --hide='*.1' ) ; do
 done
 cp $TMP/$PRGNAM/LICENSE $PKG/usr/doc/$PRGNAM
 cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM/$PRGNAM.SlackBuild
+chown -R root:root $PKG/usr/doc/$PRGNAM
+find $PKG/usr/doc -type f -exec chmod 644 {} \;
 
 # Copy the slack-desc into ./install
 mkdir -p $PKG/install
