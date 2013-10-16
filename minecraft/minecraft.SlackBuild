@@ -25,7 +25,7 @@
 # This SlackBuild downloads the Minecraft launcher and installs it
 # into a sane place as well as including an executable in /usr/bin.
 # Once you've installed the launcher with this SlackBuild you
-# can execture 'minecraft' to open the launcher which will
+# can execute 'minecraft' to open the launcher which will
 # then download and install the full game for you.
 # ---------------------------------------------------------------------
 
@@ -61,7 +61,7 @@ mkdir -p $PKG/usr/share/minecraft
 
 # Include documentation
 mkdir -p $PKG/usr/doc/$PRGNAM
-cat $CWD/$PRGNAM.SlackBuild > $PKG/usr/doc/$PRGNAM/$PRGNAM.SlackBuild
+cat $CWD/$(basename $0) > $PKG/usr/doc/$PRGNAM/$PRGNAM.SlackBuild
 chown -R root:root $PKG/usr/doc/$PRGNAM
 find $PKG/usr/doc -type f -exec chmod 644 {} \;
 
