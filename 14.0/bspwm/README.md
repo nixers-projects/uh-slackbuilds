@@ -14,3 +14,4 @@ It is controlled and configured via bspc.
 
 THIS BUILD DOES NOT INCLUDE EXAMPLE CONFIGURATION FILES.
 
+[https://github.com/baskerville/bspwm](https://github.com/baskerville/bspwm)

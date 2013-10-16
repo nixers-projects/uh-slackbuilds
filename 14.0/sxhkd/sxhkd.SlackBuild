@@ -2,7 +2,7 @@
 
 # Slackware build script for sxhkd
 
-# Copyright 2013 Tyler Buck, USA.
+# Copyright 2013 Tyler Buck, Maine, USA.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -46,12 +46,10 @@ GITURL=https://github.com/baskerville/sxhkd.git
 PREFIX=/usr
 MANPREFIX=\$\(PREFIX\)/man
 
-# Automatically determine the architecture we're building on:
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
     i?86) ARCH=i486 ;;
     arm*) ARCH=arm ;;
-    # Unless $ARCH is already set, use uname -m for all other archs:
        *) ARCH=$( uname -m ) ;;
   esac
 fi
@@ -79,16 +77,13 @@ find . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-# Compile the application and install it into the $PKG directory
 make
 make install DESTDIR=$PKG PREFIX=$PREFIX MANPREFIX=$MANPREFIX
 make clean
 
-# Compress man pages
 find $PKG/usr/man -type f -exec gzip -9 {} \;
 for i in $( find $PKG/usr/man -type l ) ; do ln -s $( readlink $i ).gz $i.gz ; rm $i ; done
 
-# Include docs, SlackBuild script and license in the documentation directory
 mkdir -p $PKG/usr/doc/$PRGNAM
 for i in $( ls $TMP/$PRGNAM-$VERSION/doc --hide='*.1' ) ; do 
     cp $TMP/$PRGNAM-$VERSION/doc/$i $PKG/usr/doc/$PRGNAM 
@@ -98,11 +93,10 @@ cat $CWD/$(basename $0) > $PKG/usr/doc/$PRGNAM/$PRGNAM.SlackBuild
 chown -R root:root $PKG/usr/doc/$PRGNAM
 find $PKG/usr/doc -type f -exec chmod 644 {} \;
 
-# Copy the slack-desc into ./install
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
-# Make the package; be sure to leave it in $OUTPUT
 VERSION=${DATE:-$VERSION}
+
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}

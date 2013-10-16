@@ -10,3 +10,4 @@ and compact configuration syntax.
 
 THIS BUILD DOES NOT INLCUDE CONFIG EXAMPLES.
 
+[https://github.com/baskerville/sxhkd](https://github.com/baskerville/sxhkd)
