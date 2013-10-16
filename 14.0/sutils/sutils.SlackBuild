@@ -76,12 +76,10 @@ find . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-# Compile the application and install it into the $PKG directory
 make
 make install DESTDIR=$PKG PREFIX=$PREFIX
 make clean
 
-# Include docs, SlackBuild script and license in the documentation directory
 mkdir -p $PKG/usr/doc/$PRGNAM
 cp $TMP/$PRGNAM-$VERSION/README.md $PKG/usr/doc/$PRGNAM
 cp $TMP/$PRGNAM-$VERSION/LICENSE $PKG/usr/doc/$PRGNAM
@@ -89,11 +87,10 @@ cat $CWD/$(basename $0) > $PKG/usr/doc/$PRGNAM/$PRGNAM.SlackBuild
 chown -R root:root $PKG/usr/doc/$PRGNAM
 find $PKG/usr/doc -type f -exec chmod 644 {} \;
 
-# Copy the description into /install
 mkdir -p $PKG/install
 cat $CWD/slack-desc > $PKG/install/slack-desc
 
-# Make the package; leave it in $OUTPUT
 VERSION=${DATE:-$VERSION}
+
 cd $PKG
 /sbin/makepkg -l y -c n $OUTPUT/$PRGNAM-$VERSION-$ARCH-$BUILD$TAG.${PKGTYPE:-tgz}
