@@ -37,7 +37,7 @@ CWD=$(cd $(dirname $0); pwd)
 # You may want to change these
 TMP=${TMP:-/tmp/tb}
 PKG=$TMP/package-$PRGNAM
-OUTPUT=${OUTPUT:-/home/tbck/builds/pkgs}
+OUTPUT=${OUTPUT:-/tmp}
 
 GITURL=https://github.com/baskerville/xdo.git
 #  URL=https://github.com/baskerville/xdo/archive/0.2.tar.gz
