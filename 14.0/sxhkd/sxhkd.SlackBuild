@@ -37,7 +37,7 @@ CWD=$(pwd)
 # You may want to change these
 TMP=${TMP:-/tmp/tb}
 PKG=$TMP/package-$PRGNAM
-OUTPUT=${OUTPUT:-/home/tbck/builds/pkgs}
+OUTPUT=${OUTPUT:-/tmp}
 
 GITURL=https://github.com/baskerville/sxhkd.git
 #  URL=https://github.com/baskerville/sxhkd/archive/0.5.1.tar.gz
