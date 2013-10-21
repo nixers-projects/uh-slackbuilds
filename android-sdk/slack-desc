@@ -1,0 +1,19 @@
+# HOW TO EDIT THIS FILE:
+# The "handy ruler" below makes it easier to edit a package description.
+# Line up the first '|' above the ':' following the base package name, and
+# the '|' on the right side marks the last column you can put a character in.
+# You must make exactly 11 lines for the formatting to be correct.  It's also
+# customary to leave one space after the ':' except on otherwise blank lines.
+
+           |-----handy-ruler------------------------------------------------------|
+android-sdk: android-sdk (Android Software Development Kit)
+android-sdk:
+android-sdk: The Android SDK provides you the API libraries and developer tools 
+android-sdk: necessary to build, test, and debug apps for Android.
+android-sdk: In order to start developing applications, you must install the 
+android-sdk: Platform-tools and at least one version of the Android platform
+android-sdk: using the SDK Manager. Execute 'android' to start the SDK Manager.
+android-sdk: You can execute '/usr/share/android-sdk/android' or you can 
+android-sdk: restart to source the path to the executables after install.
+android-sdk: 
+android-sdk: For more information, visit: http://developer.android.com/sdk/
