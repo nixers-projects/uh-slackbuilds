@@ -1,25 +1,26 @@
 Compton (A compositor for X11)
 ------------------------------
 
-Source download: [https://github.com/chjj/compton/archive/v0.1_beta1.tar.gz](https://github.com/chjj/compton/archive/v0.1_beta1.tar.gz)
-Make sure it is saved in the same directory as the build script and is named 'compton-0.1_beta1.tar.gz'. Downloading the source with wget will save just save it as 'v0.1_beta1.tar.gz'
-Setting VERSION=git in the SlackBuild will automatically download and build the latest git version
+Source download: 
+[https://github.com/chjj/compton/archive/v0.1_beta1.tar.gz](https://github.com/chjj/compton/archive/v0.1_beta1.tar.gz)
+Make sure it is saved in the same directory as the build script and 
+is named 'compton-0.1_beta1.tar.gz'. Downloading the source with wget 
+will save just save it as 'v0.1_beta1.tar.gz'
+
+Setting VERSION=git in the SlackBuild will automatically download 
+and build the latest git version
 
 Compton is a compositor for X, and a fork of xcompmgr-dana.
 
-I was frustrated by the low amount of standalone lightweight compositors.
-Compton was forked from Dana Jansens' fork of xcompmgr and refactored. I fixed
-whatever bug I found, and added features I wanted. Things seem stable, but
-don't quote me on it. I will most likely be actively working on this until I
-get the features I want. This is also a learning experience for me. That is,
-I'm partially doing this out of a desire to learn Xlib.
-
- ### Dependencies:
+### Dependencies:
  
-Slackware ships with most of these dependencies. libconfig is left out of build 1 so if you encounter any problems because of that, install build 2.
+Slackware ships with most of these dependencies.
+The only lib not included with Slackware is libconfig.
 
-__B__ for build-time
-__R__ for runtime
+libconfig is left out of build 1 so if you encounter 
+any problems because of that, install build 2.
+
+__B__ for build-time __R__ for runtime
 
 * libx11 (B,R)
 * libxcomposite (B,R)
