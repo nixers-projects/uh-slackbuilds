@@ -1,0 +1,44 @@
+Compton (A compositor for X11)
+------------------------------
+
+Source download: [https://github.com/chjj/compton/archive/v0.1_beta1.tar.gz](https://github.com/chjj/compton/archive/v0.1_beta1.tar.gz)
+Make sure it is saved in the same directory as the build script and is named 'compton-0.1_beta1.tar.gz'. Downloading the source with wget will save just save it as 'v0.1_beta1.tar.gz'
+Setting VERSION=git in the SlackBuild will automatically download and build the latest git version
+
+Compton is a compositor for X, and a fork of xcompmgr-dana.
+
+I was frustrated by the low amount of standalone lightweight compositors.
+Compton was forked from Dana Jansens' fork of xcompmgr and refactored. I fixed
+whatever bug I found, and added features I wanted. Things seem stable, but
+don't quote me on it. I will most likely be actively working on this until I
+get the features I want. This is also a learning experience for me. That is,
+I'm partially doing this out of a desire to learn Xlib.
+
+ ### Dependencies:
+ 
+Slackware ships with most of these dependencies. libconfig is left out of build 1 so if you encounter any problems because of that, install build 2.
+
+__B__ for build-time
+__R__ for runtime
+
+* libx11 (B,R)
+* libxcomposite (B,R)
+* libxdamage (B,R)
+* libxfixes (B,R)
+* libXext (B,R)
+* libxrender (B,R)
+* libXrandr (B,R)
+* libXinerama (B,R) (Can be disabled with `NO_XINERAMA` at compile time)
+* pkg-config (B)
+* make (B)
+* xproto / x11proto (B)
+* sh (R)
+* xprop,xwininfo / x11-utils (R)
+* libpcre (B,R) (Can be disabled with `NO_REGEX_PCRE` at compile time)
+* libconfig (B,R) (Can be disabled with `NO_LIBCONFIG` at compile time)
+* libdrm (B) (Can be disabled with `NO_VSYNC_DRM` at compile time)
+* libGL (B,R) (Can be disabled with `NO_VSYNC_OPENGL` at compile time)
+* libdbus (B,R) (Can be disabled with `NO_DBUS` at compile time)
+* asciidoc (B) (and docbook-xml-dtd-4.5, libxml-utils, libxslt, xsltproc, xmlto, etc. if your distro doesn't pull them in)
+
+[https://github.com/chjj/compton](https://github.com/chjj/compton)
