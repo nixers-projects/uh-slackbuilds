@@ -1,5 +1,5 @@
-Compton (A compositor for X11)
-------------------------------
+sxiv (A Simple X11 Image Viewer)
+--------------------------------
 
 Source download: 
 [https://github.com/muennich/sxiv/archive/v1.1.1.tar.gz](https://github.com/muennich/sxiv/archive/v1.1.1.tar.gz)
@@ -14,10 +14,10 @@ sxiv is a simple image viewer for X11.
 
 ### Dependencies:
  
-Slackware ships with most of these dependencies.
+Slackware ships with most of these dependencies, you'll just need imlib2.
 
 * xlib
-* imlib2
 * giflib
+* imlib2
 
 [https://github.com/muennich/sxiv](https://github.com/muennich/sxiv)
