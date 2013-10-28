@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Slackware build script for bspwm
+# Slackware build script for dmenu2
 
 # Copyright 2013 Tyler Buck, Maine, USA.
 # All rights reserved.
