@@ -2,7 +2,7 @@
 
 # Slackware build script for sxhkd
 
-# Copyright 2013 Tyler Buck, Maine, USA.
+# Copyright 2014 Tyler Buck, Maine, USA.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,7 +29,7 @@
 
 PRGNAM=sxhkd
 # Setting version to 'git' downloads and builds the latest git version
-VERSION=${VERSION:-0.5.2}
+VERSION=${VERSION:-0.5.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_tb}
 CWD=$(pwd)
@@ -40,7 +40,7 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 GITURL=https://github.com/baskerville/sxhkd.git
-#  URL=https://github.com/baskerville/sxhkd/archive/0.5.2.tar.gz
+#  URL=https://github.com/baskerville/sxhkd/archive/0.5.3.tar.gz
 
 # Default /bin prefix is /usr/local.. we want /usr
 PREFIX=/usr
