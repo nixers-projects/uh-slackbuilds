@@ -2,7 +2,7 @@
 
 # Slackware build script for bspwm
 
-# Copyright 2013 Tyler Buck, Maine, USA.
+# Copyright 2014 Tyler Buck, Maine, USA.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,7 +29,7 @@
 
 PRGNAM=bspwm
 # Setting version to 'git' downloads and builds the latest git version
-VERSION=${VERSION:-0.8.6}
+VERSION=${VERSION:-0.8.8}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_tb}
 CWD=$(cd $(dirname $0); pwd)
@@ -40,7 +40,7 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 GITURL=https://github.com/baskerville/bspwm.git
-#  URL=https://github.com/baskerville/bspwm/archive/0.8.6.tar.gz
+#  URL=https://github.com/baskerville/bspwm/archive/0.8.8.tar.gz
 
 # Default /bin prefix is /usr/local.. we want /usr
 PREFIX=/usr
