@@ -2,7 +2,7 @@
 
 # Slackware build script for compton
 
-# Copyright 2013 Tyler Buck, Maine, USA.
+# Copyright 2014 Tyler Buck, Maine, USA.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -33,7 +33,7 @@
 
 PRGNAM=compton
 # Setting version to 'git' downloads and builds the latest git version
-VERSION=${VERSION:-0.1_beta1}
+VERSION=${VERSION:-0.1_beta2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_tb}
 CWD=$(cd $(dirname $0); pwd)
@@ -44,7 +44,7 @@ PKG=$TMP/package-$PRGNAM
 OUTPUT=${OUTPUT:-/tmp}
 
 GITURL=https://github.com/chjj/compton.git
-#  URL=https://github.com/chjj/compton/archive/v0.1_beta1.tar.gz
+#  URL=https://github.com/chjj/compton/archive/v0.1_beta2.tar.gz
 
 if [ -z "$ARCH" ]; then
   case "$( uname -m )" in
@@ -78,11 +78,7 @@ find . \
  \( -perm 666 -o -perm 664 -o -perm 600 -o -perm 444 -o -perm 440 -o -perm 400 \) \
  -exec chmod 644 {} \;
 
-if [ "$BUILD" == "1" ] ; then
-    make NO_LIBCONFIG=1
-else
-    make
-fi
+make
 make docs
 make install DESTDIR=$PKG MANDIR=$MANDIR
 make clean
