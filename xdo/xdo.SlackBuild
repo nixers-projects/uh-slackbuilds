@@ -29,7 +29,7 @@
 
 PRGNAM=xdo
 # Setting version to 'git' downloads and builds the latest git version
-VERSION=${VERSION:-git}
+VERSION=${VERSION:-0.3}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_tb}
 CWD=$(cd $(dirname $0); pwd)
