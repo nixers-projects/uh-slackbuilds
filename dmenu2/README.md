@@ -2,9 +2,9 @@ dmenu2 (Dynamic Menu Extended)
 ------------------------------
 
 Source download:
-[https://bitbucket.org/melek/dmenu2/downloads/dmenu2-0.1.tar.gz](https://bitbucket.org/melek/dmenu2/downloads/dmenu2-0.1.tar.gz)
+[https://bitbucket.org/melek/dmenu2/downloads/dmenu2-0.2.tar.gz](https://bitbucket.org/melek/dmenu2/downloads/dmenu2-0.2.tar.gz)
 
-The SlackBuild will automatically download 
+Setting VERSION=bb will automatically download 
 and build the latest bitbucket version
 
 dmenu2 is the fork of original dmenu - an efficient dynamic menu for X, patched

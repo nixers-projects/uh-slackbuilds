@@ -2,7 +2,7 @@
 
 # Slackware build script for dmenu2
 
-# Copyright 2013 Tyler Buck, Maine, USA.
+# Copyright 2014 Tyler Buck, Maine, USA.
 # All rights reserved.
 #
 # Redistribution and use of this script, with or without modification, is
@@ -29,7 +29,7 @@
 
 PRGNAM=dmenu2
 # setting VERSION to 'bb' will download and build the latest version
-VERSION=${VERSION:-0.1}
+VERSION=${VERSION:-0.2}
 BUILD=${BUILD:-1}
 TAG=${TAG:-_tb}
 CWD=$(cd $(dirname $0); pwd)
