@@ -1,7 +1,9 @@
-SlackBuilds
-===========
+uh-slackbuilds
+==============
 
-SlackBuilds from the UnixHub community.
+__Notice__: This repo is not being updated anymore, pull requests may be accepted.
+
+SlackBuilds from the former UnixHub community.
 
 Installation
 ------------
